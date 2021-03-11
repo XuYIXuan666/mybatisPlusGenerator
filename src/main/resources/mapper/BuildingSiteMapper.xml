@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dongyang.sedimentcar.mapper.BuildingSiteMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.dongyang.sedimentcar.domain.BuildingSite">
+                    <id column="id" property="id"/>
+                    <result column="baojianhao" property="baojianhao"/>
+                    <result column="area" property="area"/>
+                    <result column="item" property="item"/>
+                    <result column="location" property="location"/>
+                    <result column="yujifangliang" property="yujifangliang"/>
+                    <result column="jianshedanwei" property="jianshedanwei"/>
+                    <result column="js_psrson" property="jsPsrson"/>
+                    <result column="js_phone" property="jsPhone"/>
+                    <result column="shigongdanwei" property="shigongdanwei"/>
+                    <result column="sg_phone" property="sgPhone"/>
+                    <result column="create_time" property="createTime"/>
+                    <result column="update_time" property="updateTime"/>
+                    <result column="version" property="version"/>
+                    <result column="delete_flag" property="deleteFlag"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, baojianhao, area, item, location, yujifangliang, jianshedanwei, js_psrson, js_phone, shigongdanwei, sg_phone, create_time, update_time, version, delete_flag
+        </sql>
+
+</mapper>

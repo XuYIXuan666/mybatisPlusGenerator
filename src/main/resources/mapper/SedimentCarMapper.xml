@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dongyang.sedimentcar.mapper.SedimentCarMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.dongyang.sedimentcar.domain.SedimentCar">
+                    <id column="id" property="id"/>
+                    <result column="car_num" property="carNum"/>
+                    <result column="license_plate_color" property="licensePlateColor"/>
+                    <result column="company" property="company"/>
+                    <result column="car_identification_code" property="carIdentificationCode"/>
+                    <result column="transportation_permit_num" property="transportationPermitNum"/>
+                    <result column="transportation_permit_type" property="transportationPermitType"/>
+                    <result column="transportation_permit_date" property="transportationPermitDate"/>
+                    <result column="transportation_permit_office" property="transportationPermitOffice"/>
+                    <result column="car_type" property="carType"/>
+                    <result column="create_time" property="createTime"/>
+                    <result column="update_time" property="updateTime"/>
+                    <result column="version" property="version"/>
+                    <result column="delete_flag" property="deleteFlag"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, car_num, license_plate_color, company, car_identification_code, transportation_permit_num, transportation_permit_type, transportation_permit_date, transportation_permit_office, car_type, create_time, update_time, version, delete_flag
+        </sql>
+
+</mapper>
